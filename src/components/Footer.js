@@ -8,9 +8,9 @@ function Footer() {
         <div className="footer-section">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Service</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li>Privacy Policy</li>
+            <li>Terms of Service</li>
+            <li>Contact Us</li>
           </ul>
         </div>
         <div className="footer-section">
