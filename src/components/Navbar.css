@@ -1,0 +1,87 @@
+.navbar {
+    background-color: #333;
+    color: white;
+    overflow: hidden;
+    position: relative;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.dog-logo {
+    width: 3rem;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+@media (max-width: 600px) {
+    .nav-content {
+        justify-content: center;
+    }
+
+    .navbar{
+        overflow: visible;
+    }
+    
+    .nav-links {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        display: none;
+        flex-direction: column;
+        top: 100%;
+        align-content: center;
+    }
+    
+    .nav-links.open {
+        display: flex;
+    }
+
+    .line-break {
+        max-width: 12rem;
+        width: 100%;
+        margin: 5px auto;
+        border-bottom: 2px solid orange;
+    }
+    
+    .menu-toggle {
+        display: flex;
+        position: absolute;
+        right: 20px;
+    }
+
+    .nav-links li{
+        margin: 0.25rem auto;
+    }
+}
